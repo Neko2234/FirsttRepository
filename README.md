@@ -43,7 +43,7 @@ git --version
 ```
 以下のようにGitのバージョンが表示されればインストール完了です。
 
-![](https://hackmd.io/_uploads/r12LDHud3.png)
+![](pictures/1.png)
 
 ## 初期設定をしよう
 Gitを使うためにはユーザ名とメールアドレスを登録する必要があります。
@@ -74,7 +74,7 @@ git config user.email
 
 そこで、先ほどGit Bashで登録したユーザ名とメールアドレスを入力し、「Create account」ボタンをクリックすれば、登録完了です。　
 
-![](https://hackmd.io/_uploads/Bk__EcFdn.png)
+![](pictures/2.png)
 
 ## SourceTreeをインストールしよう
 実はもうすでにGitを使うことはできるんですが、今の状態だとCLI(コマンドラインインタフェース)でしか使えなくてちょっとわかりづらいです。
@@ -87,21 +87,21 @@ git config user.email
 
 Bitbucketアカウントとの紐づけは今回は行いませんのでスキップでOKです。(後から設定できます)
 
-![](https://hackmd.io/_uploads/SyAPr9Yu3.png)
+![](pictures/3.png)
 
 次にツールのインストール画面が出てきますが、Mercuricalは使いませんので**Mercuricalのチェックはなしで**「次へ」を押してください。(画像ではチェックありになってます、わかりにくくてすみません…)
 
-![](https://hackmd.io/_uploads/BJ-d9qtu2.png)
+![](pictures/4.png)
 
 次の画面でアカウント情報を入力します。
 
 先ほど登録したユーザ名とメールアドレスを入れて「次へ」をクリックします。
 
-![](https://hackmd.io/_uploads/r1Qaj9Fd2.png)
+![](pictures/5.png)
 
 次の画面でSSHキーを読み込みますか？と聞かれますが、ここでは「いいえ」としておきます。
 
-![](https://hackmd.io/_uploads/HJwE39tdh.png)
+![](pictures/6.png)
 
 以上で設定は完了、SourceTreeが起動します。
 
@@ -117,21 +117,21 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 新しいフォルダができたら、さきほど開いたSourceTreeの「Create」をクリックします。
 
-![](https://hackmd.io/_uploads/S1-8mm2O2.png)
+![](pictures/2-1.png)
 
 そうしたら以下のような画面になるはずなので、「参照」で先ほどデスクトップに作った`GitPractice`フォルダを選択しましょう。
 
-![](https://hackmd.io/_uploads/BkpwE72_2.png)
+![](pictures/2-2.png)
 
 できたら、「作成」をクリックしてください。
 
 ここで以下のようなエラーが出るかもしれませんが、「はい」を押して大丈夫です。
 
-![](https://hackmd.io/_uploads/rJ-4H73_n.png)
+![](pictures/2-3.png)
 
 以下のような画面が出たらでリポジトリ作成完了です。
 
-![](https://hackmd.io/_uploads/SJApHX2un.png)
+![](pictures/2-4.png)
 
 
 ### コミットする
@@ -141,11 +141,11 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 作れたら、今度はそのテキストファイルに好きな文章を書き込んでください。私は画像のように書き込みました。
 
-![](https://hackmd.io/_uploads/HkiR872_n.png)
+![](pictures/3-1.png)
 
 ではSourceTreeを開いてみましょう。おや？何か増えてますね。
 
-![](https://hackmd.io/_uploads/ryxuvX3_n.png)
+![](pictures/3-2.png)
 
 「作業ツリーのファイル」のところに先ほど`GitPractice`フォルダに追加したテキストファイルが表示されています。
 
@@ -171,7 +171,7 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 では次に**コミット**を行います。以下の画像のように、下の枠に文章を入れてください。
 
-![](https://hackmd.io/_uploads/Hktqi7n_2.png)
+![](pictures/3-3.png)
 
 この文章は**コミットメッセージ**と呼ばれ、保存する変更点の説明を記入します。
 
@@ -179,7 +179,7 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 これでコミット完了！下の画像のようになればOKです。
 
-![](https://hackmd.io/_uploads/r1SekV3On.png)
+![](pictures/3-4.png)
 
 ### プッシュをする
 ここまででローカルリポジトリの使い方は終わりです。
@@ -190,11 +190,11 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 ここからは最初に登録したGitHubを使っていきます。[GitHub](https://github.com/)にアクセスして左上緑色の「Create repository」をクリックします。
 
-![](https://hackmd.io/_uploads/BJOiFkgF2.png)
+![](pictures/4-1.png)
 
 そうすれば以下のような画面が出るので、「Repository Name」を入力して一番下の「Create repository」をクリックしてください。(他の設定は変える必要ありません)
 
-![](https://hackmd.io/_uploads/H1-25yxFh.png)
+![](pictures/4-2.png)
 
 これでリモートリポジトリが完成しました！
 
@@ -202,13 +202,13 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 まずは出来上がったリモートリポジトリのURLをコピーします。以下の画像の赤い丸で囲われたボタンをクリックすると、このリポジトリのURLがコピーされます。
 
-![](https://hackmd.io/_uploads/SkLq1egY3.png)
+![](pictures/4-3.png)
 
 
 次はSourceTreeを開きましょう。一番左上にあるヘッダーから「リポジトリ」→「リポジトリ設定」を開くと、以下のようなウィンドウが表示されます。   
 「追加」をクリックして**リモートリポジトリ**の名前とURLを入力しましょう。完了したら「OK」です。
 
-![](https://hackmd.io/_uploads/rkrOyxlYn.png)
+![](pictures/4-4.png)
 
 これでローカルリポジトリとリモートリポジトリの紐づけが終わりました。 
 
@@ -218,12 +218,12 @@ Bitbucketアカウントとの紐づけは今回は行いませんのでスキ�
 
 SourceTreeの左上、上矢印が書かれた「プッシュ」ボタンをクリックしましょう。そうすると、以下の画像のようなウィンドウが表示されます。「プッシュするブランチ」の「対象」のチェックボックスにチェックを入れて、「プッシュ」をクリックします。
 
-![](https://hackmd.io/_uploads/SyPZ-exK2.png)
+![](pictures/4-5.png)
 
 これで完了です。GitHubのリモートリポジトリのページを見てみましょう。   
 画像のように変更が反映されていれば成功です。
 
-![](https://hackmd.io/_uploads/ryUkUexF2.png)
+![](pictures/4-6.png)
 
 ### クローンする
 ここからは実際にチームで開発をするうえで行う操作の練習をします。    
@@ -238,7 +238,7 @@ SourceTreeの左上、上矢印が書かれた「プッシュ」ボタンをク�
 
 ここの「Repositories」の中から、「Git_workshop」リポジトリにアクセスしてください。「〈〉Code」をクリックして表示されたポップアップからリポジトリのURLをコピーしましょう。
 
-![](https://hackmd.io/_uploads/r1UkEZlF3.png)
+![](pictures/5-1.png)
 
 ではSourceTreeを開きます。    
 上部のタブメニューの「+」をクリックし、「クローン」を選択します。
@@ -246,7 +246,7 @@ SourceTreeの左上、上矢印が書かれた「プッシュ」ボタンをク�
 以下の画像のように、「元のパス/URL」には先ほどコピーしたURLを貼り付けます。    
 「保存先のパス」には、「参照」から先ほどデスクトップに作成した`Git_workshop`フォルダを選択してください。
 
-![](https://hackmd.io/_uploads/H109VZxYn.png)
+![](pictures/5-2.png)
 
 次に**ブランチ**を作成します。これは自分が今作業している枝を指します。ここでは詳細は割愛しますが、このブランチを使うことで同時に行われる色々な変更をそれぞれ別々に管理することができるようになります。    
 例えば、機能Aと機能Bを同時に実装したいとき、機能Aのブランチ、機能Bのブランチ、と分けて作業することで効率よく実装が行えます。
@@ -254,18 +254,18 @@ SourceTreeの左上、上矢印が書かれた「プッシュ」ボタンをク�
 SourceTreeの「ブランチ」をクリックすると以下の画像のようなウィンドウが表示されるので、ブランチの名前を付けましょう。ブランチの名前は「(アカウント名)_branch」としてください。    
 終わったら「ブランチを作成」をクリックします。
 
-![](https://hackmd.io/_uploads/BydewZxF2.png)
+![](pictures/5-3.png)
 
 下のようにブランチが追加され、新しく作ったブランチの名前(画像ではmy_branch)が**太字**で表示されていることを確認してください。この状態を「my_branchに**チェックアウト**している」といいます。
 
-![](https://hackmd.io/_uploads/BkCgF-xKh.png)
+![](pictures/5-4.png)
 
 ではこのリポジトリにある`練習台.txt`を編集してみましょう。    
 以下の画像のように何かしら追記してみましょう。困ったら好物のことでも書いてください。
 
-![](https://hackmd.io/_uploads/H1GBsZxKh.png)
+![](pictures/5-5.png)
 ↓
-![](https://hackmd.io/_uploads/SkzHjWxY2.png)
+![](pictures/5-6.png)
 
 できたら保存してSourceTreeを開き、この変更をコミットします。
 
@@ -288,19 +288,19 @@ SourceTreeの「ブランチ」をクリックすると以下の画像のよう�
 終わったら今度はGitHubのGit_workshopリポジトリのページを開いてください。
 上部のタブメニューから「Pull requests」を選択し、「New pull request」をクリックします。
 
-![](https://hackmd.io/_uploads/Sk0HAIrK3.png)
+![](pictures/6-1.png)
 
 そうすると以下の画像のような画面になるので、赤線を引いた部分に注目してください。    
 ここのbaseをmainに、compareを各自が作ったブランチ（アカウント名_branch）に変更してください。これはcompareのに設定したブランチでの変更をbaseの方のブランチにも反映させますよということです。
 
 できたら、「Create pull request」をクリックしてください。
 
-![](https://hackmd.io/_uploads/SJ5ykDBFn.png)
+![](pictures/6-2.png)
 
 そのあとは以下のようになるので、コメントの部分に変更の詳細を記入してください。自分がどういう変更を行ったのかを検閲してもらう人に伝えるわけです。    
 そのあと「Create pull request」をクリックします。
 
-![](https://hackmd.io/_uploads/Hycy1vSK2.png)
+![](pictures/6-3.png)
 
 これにて、プルリクエスト完了です！
 
